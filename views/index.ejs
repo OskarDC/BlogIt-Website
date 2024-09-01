@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <h2>All Blogs</h2>
+
+    <section id="allBlogs">
+        <% if (blogPosts.length > 0) { %>
+            <% blogPosts.forEach(blogPost => { %>
+                <article id="<%= blogPost.id %>">
+                    <h3><%= blogPost.title %></h3>
+                    <p><%= blogPost.content %></p>
+                    <a href="/edit-blog/<%= blogPost.id %>" aria-label="Edit <%= blogPost.title %>">Edit</a>
+                </article>
+            <% }) %>
+        <% } else { %>
+            <p>There are no blogs.</p>
+        <% } %>
+    </section>
+</main>
+
+<%- include("partials/footer.ejs") %>

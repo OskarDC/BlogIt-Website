@@ -1,0 +1,130 @@
+/* Body */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #982B1C;
+    color: #F2E8C6;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    width: 90vw;
+    height: 90vh;
+}
+
+/* Header */
+header {
+    border: 0.1rem solid #F2E8C6;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 3vh 3vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F2E8C6;
+}
+
+nav h2:hover {
+    font-size: 2.1rem;
+}
+
+nav #nav-right {
+    display: flex;
+    gap: 1.5vw;
+}
+
+/* Main */
+main {
+    border-left: 0.1rem solid #F2E8C6;
+    border-right: 0.1rem solid #F2E8C6;
+    padding: 3vh 3vw;
+    min-height: auto;
+}
+
+main h2, main h3 {
+    margin-bottom: 1.5vh;
+}
+
+main p {
+    margin: 0 0 1.5vh 0;
+}
+
+main a {
+    padding: 0.5vh 0.5vw;
+    text-decoration: none;
+    color: #F2E8C6;
+    border: 0.1rem solid #F2E8C6;
+    border-radius: 0.5rem;
+}
+
+main a:hover {
+    background-color: #F2E8C6;
+    color: #982B1C;
+}
+
+#allBlogs article {
+    background-color: rgba(242, 232, 198, 0.2);
+    margin: 1.5vh 0;
+    padding: 1.5vh 1.5vw;
+}
+
+#newBlog, #editBlog {
+    background-color: rgba(242, 232, 198, 0.2);
+    padding: 1.5vh 1.5vw;
+}
+
+#newBlog form, #editBlog form {
+    display: flex;
+    flex-direction: column;
+}
+
+#newBlog label, #newBlog input, #newBlog textarea, #editBlog label, #editBlog input, #editBlog textarea {
+    display: flex;
+    justify-content: space-between;
+}
+
+#newBlog input, #newBlog textarea, #editBlog input, #editBlog textarea, #editBlog button[type="submit"] {
+    margin: 0 0 1.5vh 0;
+}
+
+/* Footer */
+footer {
+    border: 0.1rem solid #F2E8C6;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 3vh 3vw;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
